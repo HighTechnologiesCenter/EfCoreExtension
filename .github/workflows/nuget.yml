@@ -3,7 +3,7 @@ name: Deploy to Nuget
 on:
   push:
     tags:
-      - 'v*.*.*.*'
+      - 'v*.*.*'
 
 jobs:
   pack:
