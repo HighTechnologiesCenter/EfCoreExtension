@@ -1,3 +1,3 @@
-![example branch parameter](https://github.com/HighTechnologiesCenter/EfCoreExtension/blob/main/.github/workflows/build-test.yml/badge.svg?branch=main)
+[![.NET](https://github.com/HighTechnologiesCenter/EfCoreExtension/actions/workflows/build-test.yml/badge.svg?branch=main&event=push)](https://github.com/HighTechnologiesCenter/EfCoreExtension/actions/workflows/build-test.yml)
 # EfCoreExtension
 Расширение возможностей EF Core
