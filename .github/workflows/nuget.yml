@@ -22,4 +22,4 @@ jobs:
     - name: Pack
       run: dotnet pack src/Htc.EfCoreExtensions/Htc.EfCoreExtensions.csproj --no-restore --configuration Release -p:PackageVersion=${{ steps.get_version.outputs.version-without-v }}
     - name: Deploy
-      run: dotnet nuget push "bin/Release/OctocatApp.${{ steps.get_version.outputs.version-without-v }}.nupkg"  --api-key ${{secrets.GH_KEY}} --source "github"
+      run: dotnet nuget push "bin/Release/Htc.EfCoreExtensions.${{ steps.get_version.outputs.version-without-v }}.nupkg"  --api-key ${{secrets.NUGET_API_KEY}} --source "https://api.nuget.org/v3/index.json"
