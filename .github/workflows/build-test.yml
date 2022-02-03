@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore src/Htc.EfCoreExtensions.sln
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build src/Htc.EfCoreExtensions/Htc.EfCoreExtensions.csproj --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test src/Htc.EfCoreExtensions.Tests/Htc.EfCoreExtensions.Tests.csproj --no-build --verbosity normal
