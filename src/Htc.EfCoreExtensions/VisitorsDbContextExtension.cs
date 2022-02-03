@@ -15,7 +15,7 @@ public class VisitorsDbContextExtension : IDbContextOptionsExtension
     /// <inheritdoc />
     public void ApplyServices(IServiceCollection services)
     {
-        services.AddSingleton(_visitorsCollection);
+        services.AddScoped(_ => _visitorsCollection);
     }
 
     /// <inheritdoc />
