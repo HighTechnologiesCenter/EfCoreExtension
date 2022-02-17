@@ -10,7 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Xunit;
 
 namespace Htc.EfCoreExtensions.Tests;
-public class ServicesRegistrationTests
+public class VisitorsRegistrationTests
 {
     [Fact]
     public void ExtendedQueryCompiler_ShouldBeResolved()
